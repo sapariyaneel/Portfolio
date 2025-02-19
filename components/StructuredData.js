@@ -1,27 +1,25 @@
 const StructuredData = () => {
+  const baseUrl = 'https://neelsapariya.com'; // Replace with your domain
+
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Neel Sapariya',
     jobTitle: 'Full Stack Developer',
-    url: 'https://neelsapariya.com', // Replace with your actual domain
+    url: baseUrl,
     sameAs: [
-      'https://github.com/yourusername', // Replace with your actual profiles
-      'https://linkedin.com/in/yourusername',
-      'https://twitter.com/yourusername',
+      'https://github.com/sapariyaneel',
+      'https://linkedin.com/in/neelsapariya',
+      'https://twitter.com/sapariyaneel_',
     ],
     description: 'Neel Sapariya is a passionate Full Stack Developer crafting beautiful and functional web experiences.',
-    image: 'https://neelsapariya.com/profile.jpg', // Replace with your actual domain and image path
-    email: 'contact@example.com', // Replace with your actual email
+    image: `${baseUrl}/profile.jpg`,
+    email: 'sapariyaneel9156@gmail.com',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'San Francisco',
-      addressRegion: 'CA',
-      addressCountry: 'US',
-    },
-    alumniOf: {
-      '@type': 'CollegeOrUniversity',
-      name: 'Your University Name', // Replace with your actual education
+      addressLocality: 'Maharashtra',
+      addressRegion: 'MH',
+      addressCountry: 'IN',
     },
     knowsAbout: [
       'Web Development',
@@ -32,6 +30,15 @@ const StructuredData = () => {
       'MongoDB',
       'AWS',
     ],
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': baseUrl,
+    },
+    potentialAction: {
+      '@type': 'ContactAction',
+      target: `${baseUrl}/#contact`,
+      name: 'Contact Neel Sapariya',
+    },
   };
 
   return (
