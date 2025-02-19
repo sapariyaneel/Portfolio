@@ -1,11 +1,20 @@
 import { AnimatePresence } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
-import { Component } from 'react';
+import { Component, useState, useEffect } from 'react';
 import '../styles/globals.css';
 
-const Layout = dynamic(() => import('../components/Layout'), { ssr: true });
-const PageTransition = dynamic(() => import('../components/PageTransition'), { ssr: true });
+const Layout = dynamic(() => import('../components/Layout'), { 
+  ssr: true,
+  loading: () => (
+    <div className="min-h-screen bg-white dark:bg-primary animate-pulse" />
+  )
+});
+
+const PageTransition = dynamic(() => import('../components/PageTransition'), {
+  ssr: true,
+  loading: () => null
+});
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -38,7 +47,18 @@ class ErrorBoundary extends Component {
 }
 
 function MyApp({ Component, pageProps, router }) {
-  const canonicalUrl = `https://neelsapariya.com${router.asPath}`; // Replace with your domain
+  const [isClient, setIsClient] = useState(false);
+  const canonicalUrl = `https://neelsapariya.com${router.asPath}`;
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return (
+      <div className="min-h-screen bg-white dark:bg-primary animate-pulse" />
+    );
+  }
 
   return (
     <>
@@ -49,7 +69,7 @@ function MyApp({ Component, pageProps, router }) {
       </Head>
       <ErrorBoundary>
         <Layout>
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="wait" initial={false}>
             <PageTransition key={router.route}>
               <Component {...pageProps} />
             </PageTransition>
