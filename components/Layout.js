@@ -7,6 +7,11 @@ const Layout = ({ children }) => {
 
   useEffect(() => {
     setYear(new Date().getFullYear().toString());
+    // Set dark mode by default if no preference is stored
+    if (!localStorage.getItem('darkMode')) {
+      localStorage.setItem('darkMode', 'true');
+      document.documentElement.classList.add('dark');
+    }
   }, []);
 
   return (

@@ -76,9 +76,14 @@ const Skills = () => {
                       <motion.div
                         className="bg-blue-600 dark:bg-blue-400 h-2.5 rounded-full"
                         initial={{ width: 0 }}
+                        animate={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
-                        transition={{ duration: 1, delay: 0.5 + idx * 0.1 }}
-                        viewport={{ once: true }}
+                        transition={{ 
+                          duration: 1,
+                          delay: idx * 0.1,
+                          ease: "easeOut"
+                        }}
+                        viewport={{ once: true, amount: 0.8 }}
                       />
                     </div>
                   </div>

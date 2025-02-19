@@ -5,12 +5,12 @@ import Link from 'next/link';
 import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const isDark = localStorage.getItem('darkMode') === 'true';
+    const isDark = localStorage.getItem('darkMode') !== 'false';
     setDarkMode(isDark);
     document.documentElement.classList.toggle('dark', isDark);
 
@@ -68,6 +68,7 @@ const Navbar = () => {
               <button
                 onClick={toggleDarkMode}
                 className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors"
+                aria-label="Toggle dark mode"
               >
                 {darkMode ? (
                   <SunIcon className="h-5 w-5 text-yellow-500" />
@@ -77,14 +78,28 @@ const Navbar = () => {
               </button>
             </div>
 
-            <button
-              onClick={() => setIsMobileMenuOpen(true)}
-              className="md:hidden p-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
-            >
-              <div className="w-6 h-0.5 bg-current mb-1.5"></div>
-              <div className="w-6 h-0.5 bg-current mb-1.5"></div>
-              <div className="w-6 h-0.5 bg-current"></div>
-            </button>
+            <div className="md:hidden flex items-center space-x-4">
+              <button
+                onClick={toggleDarkMode}
+                className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors"
+                aria-label="Toggle dark mode"
+              >
+                {darkMode ? (
+                  <SunIcon className="h-5 w-5 text-yellow-500" />
+                ) : (
+                  <MoonIcon className="h-5 w-5 text-gray-700" />
+                )}
+              </button>
+              <button
+                onClick={() => setIsMobileMenuOpen(true)}
+                className="p-2 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
+                aria-label="Open menu"
+              >
+                <div className="w-6 h-0.5 bg-current mb-1.5"></div>
+                <div className="w-6 h-0.5 bg-current mb-1.5"></div>
+                <div className="w-6 h-0.5 bg-current"></div>
+              </button>
+            </div>
           </div>
         </div>
       </motion.nav>

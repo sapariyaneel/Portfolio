@@ -1,4 +1,4 @@
-const StructuredData = () => {
+const StructuredData = ({ sectionDescriptions }) => {
   const baseUrl = 'https://neelsapariya.com'; // Replace with your domain
 
   const structuredData = {
@@ -12,7 +12,7 @@ const StructuredData = () => {
       'https://linkedin.com/in/neelsapariya',
       'https://twitter.com/sapariyaneel_',
     ],
-    description: 'Neel Sapariya is a passionate Full Stack Developer crafting beautiful and functional web experiences.',
+    description: sectionDescriptions.home,
     image: `${baseUrl}/profile.jpg`,
     email: 'sapariyaneel9156@gmail.com',
     address: {
@@ -33,11 +33,50 @@ const StructuredData = () => {
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': baseUrl,
+      description: sectionDescriptions.home,
+      name: 'Neel Sapariya - Full Stack Developer Portfolio',
+      about: {
+        '@type': 'Thing',
+        description: sectionDescriptions.about,
+      },
+      significantLinks: [
+        {
+          '@type': 'WebPage',
+          '@id': `${baseUrl}/#about`,
+          name: 'About',
+          description: sectionDescriptions.about,
+        },
+        {
+          '@type': 'WebPage',
+          '@id': `${baseUrl}/#experience`,
+          name: 'Experience',
+          description: sectionDescriptions.experience,
+        },
+        {
+          '@type': 'WebPage',
+          '@id': `${baseUrl}/#projects`,
+          name: 'Projects',
+          description: sectionDescriptions.projects,
+        },
+        {
+          '@type': 'WebPage',
+          '@id': `${baseUrl}/#skills`,
+          name: 'Skills',
+          description: sectionDescriptions.skills,
+        },
+        {
+          '@type': 'WebPage',
+          '@id': `${baseUrl}/#contact`,
+          name: 'Contact',
+          description: sectionDescriptions.contact,
+        },
+      ],
     },
     potentialAction: {
       '@type': 'ContactAction',
       target: `${baseUrl}/#contact`,
       name: 'Contact Neel Sapariya',
+      description: sectionDescriptions.contact,
     },
   };
 

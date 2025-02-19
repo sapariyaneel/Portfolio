@@ -1,0 +1,16 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://neelsapariya.com/sitemap.xml
+
+# Prevent crawling of error pages
+Disallow: /_next
+Disallow: /404
+Disallow: /500
+
+# Allow crawling of static assets
+Allow: /static/
+Allow: /images/
+Allow: /projects/ 
