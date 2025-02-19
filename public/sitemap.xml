@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://neelsapariya.com</loc>
+    <loc>https://neelsapariya.vercel.app</loc>
     <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://neelsapariya.com/#about</loc>
+    <loc>https://neelsapariya.vercel.app/#about</loc>
     <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://neelsapariya.com/#experience</loc>
+    <loc>https://neelsapariya.vercel.app/#experience</loc>
     <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://neelsapariya.com/#projects</loc>
+    <loc>https://neelsapariya.vercel.app/#projects</loc>
     <lastmod>2024-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://neelsapariya.com/#skills</loc>
+    <loc>https://neelsapariya.vercel.app/#skills</loc>
     <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://neelsapariya.com/#contact</loc>
+    <loc>https://neelsapariya.vercel.app/#contact</loc>
     <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

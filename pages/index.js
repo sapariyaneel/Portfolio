@@ -24,7 +24,7 @@ const Contact = dynamic(() => import('../components/sections/Contact'), {
 // Import SEO component
 const StructuredData = dynamic(() => import('../components/StructuredData'));
 
-const baseUrl = 'https://neelsapariya.com'; // Replace with your domain
+const baseUrl = 'https://neelsapariya.vercel.app'; // Update to match your Vercel domain
 
 export default function Home() {
   const sectionDescriptions = {
@@ -43,6 +43,7 @@ export default function Home() {
         <title>Neel Sapariya | Full Stack Developer</title>
         <meta name="description" content={sectionDescriptions.home} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="z65P9d0YNI5D6PqOyjky5ZOYL9rOlOYdGZYkFiZZmog" />
         <link rel="icon" href="/favicon.ico" />
         
         {/* Preload Critical Resources */}
@@ -63,8 +64,8 @@ export default function Home() {
         <meta property="og:title" content="Neel Sapariya | Full Stack Developer" />
         <meta property="og:description" content={sectionDescriptions.home} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://neelsapariya.com" />
-        <meta property="og:image" content="https://neelsapariya.com/og-image.jpg" />
+        <meta property="og:url" content={baseUrl} />
+        <meta property="og:image" content={`${baseUrl}/og-image.jpg`} />
         <meta property="og:site_name" content="Neel Sapariya Portfolio" />
         
         {/* Twitter Card */}
@@ -73,7 +74,7 @@ export default function Home() {
         <meta name="twitter:creator" content="@sapariyaneel_" />
         <meta name="twitter:title" content="Neel Sapariya | Full Stack Developer" />
         <meta name="twitter:description" content={sectionDescriptions.home} />
-        <meta name="twitter:image" content="https://neelsapariya.com/og-image.jpg" />
+        <meta name="twitter:image" content={`${baseUrl}/og-image.jpg`} />
         
         {/* Section-specific meta tags */}
         <meta name="about" content={sectionDescriptions.about} />

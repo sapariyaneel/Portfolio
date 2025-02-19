@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://neelsapariya.com/sitemap.xml
+Sitemap: https://neelsapariya.vercel.app/sitemap.xml
 
 # Prevent crawling of error pages
 Disallow: /_next

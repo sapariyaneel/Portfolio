@@ -1,6 +1,7 @@
 import { AnimatePresence } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
+import Script from 'next/script';
 import { Component, useState, useEffect } from 'react';
 import '../styles/globals.css';
 
@@ -65,8 +66,26 @@ function MyApp({ Component, pageProps, router }) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="z65P9d0YNI5D6PqOyjky5ZOYL9rOlOYdGZYkFiZZmog" />
         <link rel="canonical" href={canonicalUrl} />
       </Head>
+
+      {/* Google Analytics */}
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+      />
+      <Script strategy="lazyOnload" id="ga-script">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
+
       <ErrorBoundary>
         <Layout>
           <AnimatePresence mode="wait" initial={false}>
