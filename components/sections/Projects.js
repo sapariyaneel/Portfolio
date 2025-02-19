@@ -215,6 +215,9 @@ const Projects = () => {
                     style={{
                       transform: hoveredProject === project.title ? 'scale(1.1)' : 'scale(1)',
                     }}
+                    onError={(e) => {
+                      e.target.src = '/placeholder.jpg';
+                    }}
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <p className="text-white text-center px-4">
