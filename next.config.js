@@ -36,8 +36,7 @@ const nextConfig = {
     return config;
   },
   experimental: {
-    optimizeCss: true,
-    optimizePackageImports: ['framer-motion', '@heroicons/react'],
+    optimizeCss: false
   },
 };
 
