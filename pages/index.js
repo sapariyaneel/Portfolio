@@ -43,7 +43,6 @@ export default function Home() {
         <title>Neel Sapariya | Full Stack Developer</title>
         <meta name="description" content={sectionDescriptions.home} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="google-site-verification" content="z65P9d0YNI5D6PqOyjky5ZOYL9rOlOYdGZYkFiZZmog" />
         <link rel="icon" href="/favicon.ico" />
         
         {/* Preload Critical Resources */}
