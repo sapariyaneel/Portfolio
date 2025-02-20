@@ -17,6 +17,12 @@ const Projects = dynamic(() => import('../components/sections/Projects'), {
 const Skills = dynamic(() => import('../components/sections/Skills'), {
   loading: () => <div className="h-96 animate-pulse bg-gray-100 dark:bg-gray-800" />
 });
+const Achievements = dynamic(() => import('../components/sections/Achievements'), {
+  loading: () => <div className="h-96 animate-pulse bg-gray-100 dark:bg-gray-800" />
+});
+const GitHubStats = dynamic(() => import('../components/sections/GitHubStats'), {
+  loading: () => <div className="h-96 animate-pulse bg-gray-100 dark:bg-gray-800" />
+});
 const Contact = dynamic(() => import('../components/sections/Contact'), {
   loading: () => <div className="h-96 animate-pulse bg-gray-100 dark:bg-gray-800" />
 });
@@ -33,6 +39,8 @@ export default function Home() {
     experience: "Explore Neel Sapariya's professional experience in full-stack development, including work at PRYM Aerospace and various tech projects.",
     projects: "View Neel's portfolio of full-stack projects, including e-commerce platforms, real-time applications, and innovative web solutions.",
     skills: "Discover Neel's technical skills in frontend and backend development, including React, Node.js, MongoDB, and cloud technologies.",
+    achievements: "Explore Neel's achievements, certifications, and recognition in the field of web development and technology.",
+    githubStats: "View Neel's GitHub statistics, contributions, and most used programming languages.",
     contact: "Get in touch with Neel Sapariya for collaboration, job opportunities, or to discuss your next web development project.",
   };
 
@@ -80,6 +88,8 @@ export default function Home() {
         <meta name="experience" content={sectionDescriptions.experience} />
         <meta name="projects" content={sectionDescriptions.projects} />
         <meta name="skills" content={sectionDescriptions.skills} />
+        <meta name="achievements" content={sectionDescriptions.achievements} />
+        <meta name="github-stats" content={sectionDescriptions.githubStats} />
         <meta name="contact" content={sectionDescriptions.contact} />
         
         {/* Keywords */}
@@ -105,6 +115,8 @@ export default function Home() {
         <Experience />
         <Projects />
         <Skills />
+        <Achievements />
+        <GitHubStats />
         <Contact />
       </main>
     </>
