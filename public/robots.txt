@@ -1,6 +1,9 @@
 # Allow all crawlers
 User-agent: *
 Disallow: /api/
+Allow: /_next/static/
+Allow: /_next/image/
+Allow: /_next/data/
 Allow: /
 
 # Sitemap location
