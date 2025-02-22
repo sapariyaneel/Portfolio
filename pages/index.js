@@ -48,10 +48,11 @@ export default function Home() {
     <>
       <Head>
         <html lang="en" />
-        <title>Neel Sapariya | Full Stack Developer</title>
-        <meta name="description" content={sectionDescriptions.home} />
+        <title>Neel Sapariya - Full Stack Developer | Portfolio</title>
+        <meta name="description" content="Neel Sapariya - Full Stack Developer specializing in React, Next.js, and Node.js. View my portfolio showcasing innovative web solutions, projects, and technical expertise." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://neelsapariya.vercel.app" />
         
         {/* Preload Critical Resources */}
         <link 
@@ -68,40 +69,31 @@ export default function Home() {
         />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Neel Sapariya | Full Stack Developer" />
-        <meta property="og:description" content={sectionDescriptions.home} />
+        <meta property="og:title" content="Neel Sapariya - Full Stack Developer" />
+        <meta property="og:description" content="Neel Sapariya - Full Stack Developer specializing in React, Next.js, and Node.js. View my portfolio showcasing innovative web solutions, projects, and technical expertise." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={baseUrl} />
-        <meta property="og:image" content={`${baseUrl}/og-image.jpg`} />
-        <meta property="og:site_name" content="Neel Sapariya Portfolio" />
+        <meta property="og:url" content="https://neelsapariya.vercel.app" />
+        <meta property="og:image" content="https://neelsapariya.vercel.app/profile.jpg" />
+        <meta property="og:site_name" content="Neel Sapariya" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sapariyaneel_" />
         <meta name="twitter:creator" content="@sapariyaneel_" />
-        <meta name="twitter:title" content="Neel Sapariya | Full Stack Developer" />
-        <meta name="twitter:description" content={sectionDescriptions.home} />
-        <meta name="twitter:image" content={`${baseUrl}/og-image.jpg`} />
-        
-        {/* Section-specific meta tags */}
-        <meta name="about" content={sectionDescriptions.about} />
-        <meta name="experience" content={sectionDescriptions.experience} />
-        <meta name="projects" content={sectionDescriptions.projects} />
-        <meta name="skills" content={sectionDescriptions.skills} />
-        <meta name="achievements" content={sectionDescriptions.achievements} />
-        <meta name="github-stats" content={sectionDescriptions.githubStats} />
-        <meta name="contact" content={sectionDescriptions.contact} />
+        <meta name="twitter:title" content="Neel Sapariya - Full Stack Developer" />
+        <meta name="twitter:description" content="Neel Sapariya - Full Stack Developer specializing in React, Next.js, and Node.js. View my portfolio showcasing innovative web solutions, projects, and technical expertise." />
+        <meta name="twitter:image" content="https://neelsapariya.vercel.app/profile.jpg" />
         
         {/* Keywords */}
-        <meta name="keywords" content="Neel Sapariya, Full Stack Developer, Web Development, React, Next.js, Node.js, MongoDB, JavaScript, Frontend Developer, Backend Developer" />
+        <meta name="keywords" content="Neel Sapariya, Full Stack Developer, Web Developer, React Developer, Next.js Developer, Node.js Developer, JavaScript Developer, Portfolio, Web Development, Software Engineer" />
         
         {/* Additional Meta Tags */}
         <meta name="author" content="Neel Sapariya" />
         <meta name="theme-color" content="#050816" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         
         {/* Security Headers */}
-        <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';" />
+        <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self' data:;" />
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta httpEquiv="X-Frame-Options" content="DENY" />
         <meta httpEquiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />

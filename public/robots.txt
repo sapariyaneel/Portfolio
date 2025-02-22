@@ -1,5 +1,6 @@
 # Allow all crawlers
 User-agent: *
+Disallow: /api/
 Allow: /
 
 # Sitemap location
