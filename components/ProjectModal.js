@@ -145,7 +145,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="button-secondary flex-1 text-center"
+                    className="button-primary flex-1 text-center"
                   >
                     View Source Code
                   </Link>

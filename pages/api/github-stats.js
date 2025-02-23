@@ -141,6 +141,9 @@ export default async function handler(req, res) {
     } catch (apiError) {
       // Handle specific API errors
       console.error('GitHub API Error:', apiError.message);
+      if (apiError.response) {
+        console.error('Response data:', apiError.response.data); // Log the response data
+      }
       
       if (apiError.response?.status === 403) {
         return res.status(403).json({

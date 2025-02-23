@@ -189,84 +189,20 @@ const GitHubStats = () => {
           viewport={{ once: true }}
         >
           <h2 className="heading text-center">GitHub Stats</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Basic Stats */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-[#1f2937] rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700"
-            >
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Basic Stats</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600 dark:text-gray-300">Total Stars Earned</span>
-                  <span className="text-blue-600 dark:text-blue-400 font-semibold">{stats.totalStars}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600 dark:text-gray-300">Total Commits (2025)</span>
-                  <span className="text-blue-600 dark:text-blue-400 font-semibold">{stats.totalCommits}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600 dark:text-gray-300">Total PRs</span>
-                  <span className="text-blue-600 dark:text-blue-400 font-semibold">{stats.totalPRs}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600 dark:text-gray-300">Total Issues</span>
-                  <span className="text-blue-600 dark:text-blue-400 font-semibold">{stats.totalIssues}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600 dark:text-gray-300">Contributed to (last year)</span>
-                  <span className="text-blue-600 dark:text-blue-400 font-semibold">0</span>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Contribution Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-[#1f2937] rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700"
-            >
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Contributions</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600 dark:text-gray-300">Total Contributions</span>
-                  <span className="text-blue-600 dark:text-blue-400 font-semibold">{stats.totalContributions}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600 dark:text-gray-300">Current Streak</span>
-                  <span className="text-blue-600 dark:text-blue-400 font-semibold">{stats.currentStreak} days</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-600 dark:text-gray-300">Longest Streak</span>
-                  <span className="text-blue-600 dark:text-blue-400 font-semibold">{stats.longestStreak} days</span>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Top Contributed Repositories */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-[#1f2937] rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700"
-            >
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Top Contributed Repo</h3>
-              <div className="space-y-4">
-                {stats.contributedRepos.map((repo, idx) => (
-                  <div key={idx} className="flex items-center">
-                    <span className="text-gray-600 dark:text-gray-300">{repo.name}</span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="bg-white dark:bg-[#1f2937] rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700"
+          >
+            <img
+              src={`https://github-readme-streak-stats.herokuapp.com/?user=sapariyaneel&theme=${isDarkMode ? 'dark' : 'light'}&hide_border=true&background=00000000&border=30363D&stroke=30363D&ring=39D353&fire=39D353&currStreakNum=39D353&sideNums=39D353&currStreakLabel=39D353&sideLabels=39D353&dates=39D353`}
+              alt="GitHub Streak Stats"
+              className="w-full h-auto mx-auto"
+              loading="lazy"
+            />
+          </motion.div>
 
           {/* Tech Stack */}
           <motion.div
