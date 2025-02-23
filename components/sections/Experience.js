@@ -6,9 +6,9 @@ const experiences = [
     company: "PRYM Aerospace Pvt. Ltd.",
     period: "January 2025 - Present",
     description: [
-      "Led development of multiple high-impact web applications using React and Node.js",
-      "Implemented CI/CD pipelines reducing deployment time by 40%",
-      "Mentored junior developers and conducted code reviews",
+      "Developing software solutions to enhance hardware control and automation.",
+      "Designing user-friendly applications to simplify complex aerospace operations.",
+      "Collaborating with teams to optimize software performance and integration.",
     ],
   },
   {
@@ -16,9 +16,9 @@ const experiences = [
     company: "PRYM Aerospace Pvt. Ltd.",
     period: "October 2024 - January 2025",
     description: [
-      "Led development of multiple high-impact web applications using React and Node.js",
-      "Implemented CI/CD pipelines reducing deployment time by 40%",
-      "Mentored junior developers and conducted code reviews",
+      "Integrated sensors and modules in embedded systems to enhance functionality.",
+      "Developed software to control the gyro machine and motors, improving automation.",
+      "Gained hands-on experience in embedded systems and software development for aerospace applications.",
     ],
   },
   {
@@ -26,9 +26,9 @@ const experiences = [
     company: "Octanet Services Pvt. Ltd.",
     period: "October 2024 - December 2024",
     description: [
-      "Developed and maintained client websites using Next.js and MongoDB",
-      "Optimized application performance improving load times by 60%",
-      "Collaborated with design team to implement responsive UI/UX",
+      "Completed assigned software development tasks efficiently and on time.",
+      "Gained hands-on experience in coding, debugging, and problem-solving.",
+      "Adapted to new technologies and followed best practices in software development.",
     ],
   },
   {
@@ -36,9 +36,9 @@ const experiences = [
     company: "Medical Clinic",
     period: "July 2022 - July 2023",
     description: [
-      "Built responsive web applications using React and Redux",
-      "Implemented modern UI libraries and custom animations",
-      "Worked closely with backend team to integrate REST APIs",
+      "Entered and managed medical store inventory data accurately in specialized software.",
+      "Maintained records of medicines, stock levels, and sales transactions.",
+      "Ensured data integrity and assisted in streamlining billing and invoicing processes.",
     ],
   },
 ];
@@ -47,8 +47,8 @@ const Experience = () => {
   return (
     <section id="experience" className="section-padding bg-gray-50 dark:bg-gray-900/50">
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >

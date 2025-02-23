@@ -29,7 +29,16 @@ const Hero = () => {
             <Link href="#projects" className="button-primary">
               View My Work
             </Link>
-            <Link href="#contact" className="button-secondary">
+            <a
+              href="/resume.pdf"
+              download
+              className="button-secondary dark:hover:bg-blue-700 transition-colors duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Resume
+            </a>
+            <Link href="#contact" className="button-secondary dark:hover:bg-blue-700 transition-colors duration-300">
               Get in Touch
             </Link>
           </motion.div>
