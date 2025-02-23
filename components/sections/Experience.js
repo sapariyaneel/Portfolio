@@ -47,10 +47,10 @@ const Experience = () => {
   return (
     <section id="experience" className="section-padding bg-gray-50 dark:bg-gray-900/50">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
       >
         <h2 className="heading text-center">Work Experience</h2>
         
@@ -58,10 +58,10 @@ const Experience = () => {
           {experiences.map((experience, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              viewport={{ once: true }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: false }}
               className="relative pl-8 pb-12 last:pb-0"
             >
               {/* Timeline line */}
@@ -72,7 +72,13 @@ const Experience = () => {
               {/* Timeline dot */}
               <div className="absolute left-0 top-[6px] w-6 h-6 rounded-full border-4 border-blue-600 dark:border-blue-400 bg-white dark:bg-gray-900" />
               
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg ml-4">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: false }}
+                className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg ml-4"
+              >
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                   {experience.title}
                 </h3>
@@ -90,7 +96,7 @@ const Experience = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </motion.div>
             </motion.div>
           ))}
         </div>

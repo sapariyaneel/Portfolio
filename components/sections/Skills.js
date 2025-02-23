@@ -40,10 +40,10 @@ const Skills = () => {
   return (
     <section id="skills" className="section-padding bg-gray-50 dark:bg-gray-900/50">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
+        viewport={{ once: false}}
       >
         <h2 className="heading text-center">Skills & Expertise</h2>
         
@@ -51,10 +51,10 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              viewport={{ once: true }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: false }}
               className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg"
             >
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
@@ -78,12 +78,8 @@ const Skills = () => {
                         initial={{ width: 0 }}
                         animate={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
-                        transition={{ 
-                          duration: 1,
-                          delay: idx * 0.1,
-                          ease: "easeOut"
-                        }}
-                        viewport={{ once: true, amount: 0.8 }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        viewport={{ once: false   , amount: 0.8 }}
                       />
                     </div>
                   </div>

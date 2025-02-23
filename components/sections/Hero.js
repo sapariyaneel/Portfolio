@@ -6,24 +6,44 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center bg-hero-pattern bg-cover bg-center bg-no-repeat">
       <div className="section-padding text-center">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{}}
+          transition={{ duration: 1, ease: "easeOut" }}
         >
-          <h1 className="heading text-4xl sm:text-6xl lg:text-7xl mb-6">
+          <motion.h1 
+            className="heading text-4xl sm:text-6xl lg:text-7xl mb-6"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{}}
+            transition={{ duration: 0.5 }}
+          >
             Hi, I'm{' '}
-            <span className="text-blue-600 dark:text-blue-400">
+            <motion.span 
+              className="text-blue-600 dark:text-blue-400"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{}}
+              transition={{ duration: 0.5 }}
+            >
               Neel Sapariya
-            </span>
-          </h1>
-          <h2 className="subheading max-w-2xl mx-auto">
+            </motion.span>
+          </motion.h1>
+          <motion.h2 
+            className="subheading max-w-2xl mx-auto"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{}}
+            transition={{ duration: 0.5 }}
+          >
             A passionate Full Stack Developer crafting beautiful and functional web experiences
-          </h2>
+          </motion.h2>
           
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{}}
+            transition={{ duration: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mt-8"
           >
             <Link href="#projects" className="button-primary">
@@ -44,9 +64,10 @@ const Hero = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{}}
+            transition={{ duration: 0.5 }}
             className="mt-16"
           >
             <div className="animate-bounce">

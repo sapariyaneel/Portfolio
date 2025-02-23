@@ -186,7 +186,7 @@ const GitHubStats = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <h2 className="heading text-center">GitHub Stats</h2>
             <motion.div
@@ -208,7 +208,7 @@ const GitHubStats = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
             className="mt-12"
           >
@@ -233,7 +233,7 @@ const GitHubStats = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
             className="mt-12"
           >

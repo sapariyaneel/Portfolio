@@ -83,27 +83,46 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: false, amount: 0.2 }}
         className="max-w-4xl mx-auto"
       >
-        <h2 className="heading text-center">Get In Touch</h2>
-        <p className="text-center text-gray-600 dark:text-gray-400 mb-12">
+        <motion.h2 
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: false }}
+          className="heading text-center"
+        >
+          Get In Touch
+        </motion.h2>
+        <motion.p 
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: false }}
+          className="text-center text-gray-600 dark:text-gray-400 mb-12"
+        >
           Have a question or want to work together? Feel free to reach out!
-        </p>
+        </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Form */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: false, amount: 0.2 }}
           >
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: false }}
+              >
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                   Name
                 </label>
@@ -117,9 +136,14 @@ const Contact = () => {
                   disabled={isSubmitting}
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50"
                 />
-              </div>
+              </motion.div>
               
-              <div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: false }}
+              >
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                   Email
                 </label>
@@ -133,9 +157,14 @@ const Contact = () => {
                   disabled={isSubmitting}
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50"
                 />
-              </div>
+              </motion.div>
               
-              <div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: false }}
+              >
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                   Message
                 </label>
@@ -149,9 +178,13 @@ const Contact = () => {
                   rows={4}
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50"
                 />
-              </div>
+              </motion.div>
 
-              <button
+              <motion.button
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: false }}
                 type="submit"
                 disabled={isSubmitting}
                 className={`w-full button-primary flex items-center justify-center ${
@@ -185,7 +218,7 @@ const Contact = () => {
                 ) : (
                   'Send Message'
                 )}
-              </button>
+              </motion.button>
 
               {submitStatus === 'success' && (
                 <motion.p
@@ -210,17 +243,29 @@ const Contact = () => {
 
           {/* Contact Info */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: false, amount: 0.2 }}
             className="bg-gray-50 dark:bg-gray-800/50 p-8 rounded-xl"
           >
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
+            <motion.h3 
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: false }}
+              className="text-xl font-bold text-gray-900 dark:text-white mb-6"
+            >
               Connect With Me
-            </h3>
+            </motion.h3>
             
-            <div className="space-y-4 mb-8">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: false }}
+              className="space-y-4 mb-8"
+            >
               <p className="flex items-center text-gray-600 dark:text-gray-400">
                 <svg className="w-6 h-6 mr-3 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -234,25 +279,41 @@ const Contact = () => {
                 </svg>
                 Maharashtra, India
               </p>
-            </div>
+            </motion.div>
 
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+              <motion.h4 
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: false }}
+                className="text-lg font-semibold text-gray-900 dark:text-white mb-4"
+              >
                 Follow Me
-              </h4>
-              <div className="flex space-x-4">
-                {socialLinks.map((link) => (
-                  <a
+              </motion.h4>
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: false }}
+                className="flex space-x-4"
+              >
+                {socialLinks.map((link, idx) => (
+                  <motion.a
                     key={link.name}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.3, delay: 0.8 + (idx * 0.1) }}
+                    viewport={{ once: false }}
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                   >
                     {link.icon}
-                  </a>
+                  </motion.a>
                 ))}
-              </div>
+              </motion.div>
             </div>
           </motion.div>
         </div>

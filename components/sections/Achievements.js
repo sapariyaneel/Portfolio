@@ -46,35 +46,50 @@ const Achievements = () => {
   return (
     <section id="achievements" className="section-padding bg-gray-50 dark:bg-gray-900/50">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: false, amount: 0.2 }}
+        className="container mx-auto"
       >
-        <h2 className="heading text-center">Achievements & Certifications</h2>
+        <motion.h2 
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: false }}
+          className="heading text-center"
+        >
+          Achievements & Certifications
+        </motion.h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           {achievements.map((category, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              viewport={{ once: true }}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: false, amount: 0.2 }}
               className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg"
             >
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
+              <motion.h3
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: false }}
+                className="text-xl font-bold text-gray-900 dark:text-white mb-6"
+              >
                 {category.title}
-              </h3>
+              </motion.h3>
               
               <div className="space-y-6">
                 {category.items.map((item, idx) => (
                   <motion.div
                     key={idx}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: idx * 0.1 }}
-                    viewport={{ once: true }}
+                    initial={{ opacity: 0, scale: 0.9, x: -20 }}
+                    whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
+                    viewport={{ once: false, amount: 0.2 }}
                     className="border-l-4 border-blue-600 dark:border-blue-400 pl-4"
                   >
                     <h4 className="text-lg font-semibold text-gray-800 dark:text-white">
