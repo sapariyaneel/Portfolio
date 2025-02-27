@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
+    "@octokit/rest": "^21.1.1",
     "@sendgrid/mail": "^8.1.4",
     "autoprefixer": "^10.4.17",
     "axios": "^1.7.9",

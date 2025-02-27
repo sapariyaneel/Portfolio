@@ -197,7 +197,7 @@ const GitHubStats = () => {
             className="bg-white dark:bg-[#1f2937] rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700"
           >
             <img
-              src={`https://github-readme-streak-stats.herokuapp.com/?user=sapariyaneel&theme=${isDarkMode ? 'dark' : 'light'}&hide_border=true&background=00000000&border=30363D&stroke=30363D&ring=39D353&fire=39D353&currStreakNum=39D353&sideNums=39D353&currStreakLabel=39D353&sideLabels=39D353&dates=39D353`}
+              src={`https://nirzak-streak-stats.vercel.app/?user=sapariyaneel&theme=${isDarkMode ? 'dark' : 'light'}&hide_border=true&background=00000000&border=30363D&stroke=30363D&ring=39D353&fire=39D353&currStreakNum=39D353&sideNums=39D353&currStreakLabel=39D353&sideLabels=39D353&dates=39D353`}
               alt="GitHub Streak Stats"
               className="w-full h-auto mx-auto"
               loading="lazy"
@@ -209,7 +209,7 @@ const GitHubStats = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className="mt-12"
           >
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">💻 Tech Stack</h3>
@@ -219,8 +219,8 @@ const GitHubStats = () => {
                   key={idx}
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.3, delay: idx * 0.02 }}
-                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: idx * 0.03 }}
+                  viewport={{ once: false }}
                   className={`px-4 py-2 rounded text-sm font-medium ${tech.className}`}
                 >
                   {tech.name}
