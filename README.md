@@ -6,13 +6,29 @@ Welcome to my personal portfolio website! This is a modern, responsive web appli
 
 ## 🚀 Features
 
-- **Responsive Design**: Seamless experience across all devices
-- **Dark Mode**: Easy on the eyes with automatic theme detection
-- **Smooth Animations**: Engaging user experience with Framer Motion
-- **SEO Optimized**: Enhanced visibility with meta tags and structured data
-- **Performance Focused**: Optimized loading with dynamic imports and image optimization
+- **Responsive Design**: Seamless experience across all devices with optimized layouts
+- **Dark Mode**: Easy on the eyes with automatic theme detection and smooth transitions
+- **Smooth Animations**: Enhanced user experience with Framer Motion
+  - Optimized animation performance with reduced delays
+  - Consistent vertical slide animations across sections
+  - Smooth transitions for dark/light mode switching
+- **SEO Optimized**: Enhanced visibility with:
+  - Comprehensive meta tags and structured data
+  - Optimized Open Graph and Twitter card integration
+  - Improved search engine indexing
+  - Dynamic sitemap generation
+- **Performance Focused**: 
+  - Dynamic imports for better code splitting
+  - Optimized image loading with Next.js Image component
+  - Lazy loading for better initial page load
+  - Reduced animation complexity for smoother performance
 - **Accessibility**: WCAG compliant with proper ARIA labels and semantic HTML
 - **Contact Form**: Integrated email functionality for easy communication
+- **GitHub Integration**: 
+  - Real-time GitHub statistics
+  - Dynamic contribution graph
+  - Automated streak tracking
+  - Tech stack visualization with icons
 
 ## 🛠️ Built With
 
@@ -22,56 +38,34 @@ Welcome to my personal portfolio website! This is a modern, responsive web appli
 - **Icons**: Heroicons
 - **Email Service**: Nodemailer
 - **Deployment**: Vercel
+- **Version Control**: Git & GitHub
 
 ## 🌟 Sections
 
-- **Hero**: Eye-catching introduction
-- **About**: Professional background and interests
-- **Experience**: Work history and achievements
-- **Projects**: Showcase of key projects
-- **Skills**: Technical expertise
-- **Contact**: Get in touch form
-
-## 💻 Local Development
-
-1. Clone the repository:
-```bash
-git clone https://github.com/sapariyaneel/Portfolio-New.git
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Create a `.env.local` file with necessary environment variables:
-```env
-SMTP_HOST=your_smtp_host
-SMTP_PORT=your_smtp_port
-SMTP_USER=your_email
-SMTP_PASSWORD=your_password
-```
-
-4. Start the development server:
-```bash
-npm run dev
-```
-
-5. Open [http://localhost:3000](http://localhost:3000) to view the site
+- **Hero**: Dynamic introduction with smooth text animations
+- **About**: Professional background with optimized profile image display
+- **Experience**: Detailed work history with timeline visualization
+- **Projects**: 
+  - Interactive project showcase
+  - Category filtering system
+  - Search functionality
+  - Modal view for project details
+- **Skills**: Animated skill bars with progress indicators
+- **Achievements**: Timeline-based achievement showcase
+- **GitHub Stats**: 
+  - Live contribution tracking
+  - Tech stack visualization
+  - Streak statistics
+- **Contact**: Enhanced contact form with social media integration
 
 ## 📝 License
 
-This project is open source and available under the MIT License.
+This is a personal portfolio website. All rights reserved. © 2024 Neel Sapariya. This project is not open source and is not available for reuse, modification, or distribution.
 
 ## 🤝 Contact
 
 Feel free to reach out if you have any questions or just want to connect:
 
-- Email: sapariyaneel9156@gmail.com
 - LinkedIn: [Neel Sapariya](https://linkedin.com/in/neelsapariya)
-- Twitter: [@sapariyaneel_](https://twitter.com/sapariyaneel_)
+- Twitter: [@sapariyaneel_](https://x.com/sapariyaneel_)
 - GitHub: [@sapariyaneel](https://github.com/sapariyaneel)
-
----
-
-Designed & Built with ❤️ by Neel Sapariya
