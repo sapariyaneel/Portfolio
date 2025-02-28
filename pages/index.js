@@ -48,7 +48,7 @@ export default function Home() {
     <>
       <Head>
         <html lang="en" />
-        <title>Neel Sapariya - Full Stack Developer | Portfolio</title>
+        <title>Neel Sapariya - Full Stack Developer</title>
         <meta name="description" content="Neel Sapariya - Full Stack Developer specializing in React, Next.js, and Node.js. View my portfolio showcasing innovative web solutions, projects, and technical expertise." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
