@@ -50,7 +50,7 @@ const Experience = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        viewport={{ once: false }}
+        viewport={{ once: true, amount: "some" }}
       >
         <h2 className="heading text-center">Work Experience</h2>
         
@@ -61,7 +61,7 @@ const Experience = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              viewport={{ once: false }}
+              viewport={{ once: true, amount: "some" }}
               className="relative pl-8 pb-12 last:pb-0"
             >
               {/* Timeline line */}
@@ -76,7 +76,7 @@ const Experience = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                viewport={{ once: false }}
+                viewport={{ once: true, amount: "some" }}
                 className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg ml-4"
               >
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">

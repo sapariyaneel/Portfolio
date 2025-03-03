@@ -49,14 +49,14 @@ const Achievements = () => {
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="container mx-auto"
       >
         <motion.h2 
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           className="heading text-center"
         >
           Achievements & Certifications
@@ -69,14 +69,14 @@ const Achievements = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg"
             >
               <motion.h3
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 className="text-xl font-bold text-gray-900 dark:text-white mb-6"
               >
                 {category.title}
@@ -89,7 +89,7 @@ const Achievements = () => {
                     initial={{ opacity: 0, scale: 0.9, x: -20 }}
                     whileInView={{ opacity: 1, scale: 1, x: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
-                    viewport={{ once: false, amount: 0.2 }}
+                    viewport={{ once: true, amount: 0.2 }}
                     className="border-l-4 border-blue-600 dark:border-blue-400 pl-4"
                   >
                     <h4 className="text-lg font-semibold text-gray-800 dark:text-white">

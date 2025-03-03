@@ -43,7 +43,7 @@ const Skills = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: "some" }}
       >
         <h2 className="heading text-center">Skills & Expertise</h2>
         
@@ -54,7 +54,7 @@ const Skills = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: "some" }}
               className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg"
             >
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
@@ -79,7 +79,7 @@ const Skills = () => {
                         animate={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
                         transition={{ duration: 1, ease: "easeOut" }}
-                        viewport={{ once: false   , amount: 0.8 }}
+                        viewport={{ once: true   , amount: 0.8 }}
                       />
                     </div>
                   </div>

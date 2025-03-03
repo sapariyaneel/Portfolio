@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
@@ -11,43 +12,48 @@
   </url>
   <url>
     <loc>https://neelsapariya.vercel.app/#about</loc>
-    <lastmod>2023-10-01</lastmod>
+    <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://neelsapariya.vercel.app/profile.jpg</image:loc>
+      <image:title>Neel Sapariya - Full Stack Developer</image:title>
+      <image:caption>Profile photo of Neel Sapariya</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://neelsapariya.vercel.app/#experience</loc>
-    <lastmod>2023-10-01</lastmod>
+    <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://neelsapariya.vercel.app/#projects</loc>
-    <lastmod>2023-10-01</lastmod>
+    <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://neelsapariya.vercel.app/#skills</loc>
-    <lastmod>2023-10-01</lastmod>
+    <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://neelsapariya.vercel.app/#achievements</loc>
-    <lastmod>2023-10-01</lastmod>
+    <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://neelsapariya.vercel.app/#github-stats</loc>
-    <lastmod>2023-10-01</lastmod>
+    <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://neelsapariya.vercel.app/#contact</loc>
-    <lastmod>2023-10-01</lastmod>
+    <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

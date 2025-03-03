@@ -8,14 +8,14 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{}}
+          viewport={{ once: true, amount: "some" }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <motion.h1 
             className="heading text-4xl sm:text-6xl lg:text-7xl mb-6"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{}}
+            viewport={{ once: true, amount: "some" }}
             transition={{ duration: 0.5 }}
           >
             Hi, I'm{' '}
@@ -23,7 +23,7 @@ const Hero = () => {
               className="text-blue-600 dark:text-blue-400"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{}}
+              viewport={{ once: true, amount: "some" }}
               transition={{ duration: 0.5 }}
             >
               Neel Sapariya
@@ -33,7 +33,7 @@ const Hero = () => {
             className="subheading max-w-2xl mx-auto"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{}}
+            viewport={{ once: true, amount: "some" }}
             transition={{ duration: 0.5 }}
           >
             A passionate Full Stack Developer crafting beautiful and functional web experiences
@@ -42,7 +42,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{}}
+            viewport={{ once: true, amount: "some" }}
             transition={{ duration: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mt-8"
           >
@@ -66,7 +66,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{}}
+            viewport={{ once: true, amount: "some" }}
             transition={{ duration: 0.5 }}
             className="mt-16"
           >

@@ -186,7 +186,7 @@ const GitHubStats = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
         >
           <h2 className="heading text-center">GitHub Stats</h2>
             <motion.div
@@ -209,7 +209,7 @@ const GitHubStats = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             className="mt-12"
           >
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">💻 Tech Stack</h3>
@@ -220,7 +220,7 @@ const GitHubStats = () => {
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: idx * 0.03 }}
-                  viewport={{ once: false }}
+                  viewport={{ once: true }}
                   className={`px-4 py-2 rounded text-sm font-medium ${tech.className}`}
                 >
                   {tech.name}

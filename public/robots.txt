@@ -6,15 +6,24 @@ Allow: /_next/image/
 Allow: /_next/data/
 Allow: /
 
+# Explicitly allow image crawling
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /profile.jpg
+Allow: /projects/
+Allow: /images/
+
 # Sitemap location
 Sitemap: https://neelsapariya.vercel.app/sitemap.xml
 
 # Prevent crawling of error pages
-Disallow: /_next
+Disallow: /_next/server/
 Disallow: /404
 Disallow: /500
 
 # Allow crawling of static assets
 Allow: /static/
-Allow: /images/
-Allow: /projects/ 
+Allow: /favicon/ 

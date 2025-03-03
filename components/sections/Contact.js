@@ -86,14 +86,14 @@ const Contact = () => {
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="max-w-4xl mx-auto"
       >
         <motion.h2 
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           className="heading text-center"
         >
           Get In Touch
@@ -102,7 +102,7 @@ const Contact = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           className="text-center text-gray-600 dark:text-gray-400 mb-12"
         >
           Have a question or want to work together? Feel free to reach out!
@@ -114,14 +114,14 @@ const Contact = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
               >
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                   Name
@@ -142,7 +142,7 @@ const Contact = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
               >
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                   Email
@@ -163,7 +163,7 @@ const Contact = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
               >
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                   Message
@@ -184,7 +184,7 @@ const Contact = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 type="submit"
                 disabled={isSubmitting}
                 className={`w-full button-primary flex items-center justify-center ${
@@ -246,14 +246,14 @@ const Contact = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
             className="bg-gray-50 dark:bg-gray-800/50 p-8 rounded-xl"
           >
             <motion.h3 
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               className="text-xl font-bold text-gray-900 dark:text-white mb-6"
             >
               Connect With Me
@@ -263,7 +263,7 @@ const Contact = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               className="space-y-4 mb-8"
             >
               <p className="flex items-center text-gray-600 dark:text-gray-400">
@@ -286,7 +286,7 @@ const Contact = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 className="text-lg font-semibold text-gray-900 dark:text-white mb-4"
               >
                 Follow Me
@@ -295,7 +295,7 @@ const Contact = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 className="flex space-x-4"
               >
                 {socialLinks.map((link, idx) => (
@@ -304,7 +304,7 @@ const Contact = () => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3, delay: 0.8 + (idx * 0.1) }}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
