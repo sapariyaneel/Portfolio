@@ -3,24 +3,29 @@ import Image from 'next/image';
 import Head from 'next/head';
 
 const About = () => {
-  const profileImageUrl = 'https://neelsapariya.vercel.app/profile.jpg'; // Direct URL to image
+  const profileImageUrl = '/profile.jpg';
 
   return (
     <>
       <Head>
         {/* Image meta tags */}
         <meta property="og:type" content="profile" />
-        <meta property="og:title" content="Neel Sapariya - Full Stack Developer" />
-        <meta property="og:description" content="Full Stack Developer specializing in creating elegant solutions with modern web technologies" />
+        <meta property="og:title" content="Neel Sapariya | About Me - Full Stack Developer" />
+        <meta property="og:description" content="About Neel Sapariya - Full Stack Developer specializing in creating elegant solutions with modern web technologies" />
         <meta property="og:image" content={profileImageUrl} />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="800" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Neel Sapariya - Full Stack Developer" />
-        <meta name="twitter:description" content="Full Stack Developer specializing in creating elegant solutions with modern web technologies" />
+        <meta name="twitter:title" content="Neel Sapariya | About Me - Full Stack Developer" />
+        <meta name="twitter:description" content="About Neel Sapariya - Full Stack Developer specializing in creating elegant solutions with modern web technologies" />
         <meta name="twitter:image" content={profileImageUrl} />
         <meta name="image" content={profileImageUrl} />
         <meta property="og:image:alt" content="Neel Sapariya - Full Stack Developer" />
+        
+        {/* Image indexing specific tags */}
+        <meta name="robots" content="max-image-preview:large" />
+        <meta name="thumbnail" content={profileImageUrl} />
+        <link rel="image_src" href={profileImageUrl} />
         
         {/* Structured Data for Person */}
         <script
@@ -30,6 +35,8 @@ const About = () => {
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Neel Sapariya",
+              "givenName": "Neel",
+              "familyName": "Sapariya",
               "image": profileImageUrl,
               "url": "https://neelsapariya.vercel.app",
               "jobTitle": "Full Stack Developer",
@@ -97,7 +104,7 @@ const About = () => {
               transition={{ duration: 0.5 }}
               className="heading"
             >
-              About Me
+              About Neel Sapariya
             </motion.h2>
             
             <motion.div
@@ -108,7 +115,7 @@ const About = () => {
               className="space-y-4 text-gray-600 dark:text-gray-300"
             >
               <p>
-                I'm a passionate Full Stack Developer with a keen eye for creating elegant solutions
+                I'm <strong>Neel Sapariya</strong>, a passionate Full Stack Developer with a keen eye for creating elegant solutions
                 in the least amount of time. I specialize in building robust applications that meet
                 both client and user needs.
               </p>

@@ -49,7 +49,7 @@ export default function Home() {
       <Head>
         <html lang="en" />
         <title>Neel Sapariya - Full Stack Developer</title>
-        <meta name="description" content="Neel Sapariya - Full Stack Developer specializing in React, Next.js, and Node.js. View my portfolio showcasing innovative web solutions, projects, and technical expertise." />
+        <meta name="description" content="Neel Sapariya - Personal portfolio website. Experienced Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. View my projects and professional experience." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://neelsapariya.vercel.app" />
@@ -69,28 +69,38 @@ export default function Home() {
         />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Neel Sapariya - Full Stack Developer" />
-        <meta property="og:description" content="Neel Sapariya - Full Stack Developer specializing in React, Next.js, and Node.js. View my portfolio showcasing innovative web solutions, projects, and technical expertise." />
+        <meta property="og:title" content="Neel Sapariya | Personal Portfolio - Full Stack Developer" />
+        <meta property="og:description" content="Neel Sapariya - Personal portfolio website. Experienced Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. View my projects and professional experience." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://neelsapariya.vercel.app" />
-        <meta property="og:image" content="https://neelsapariya.vercel.app/profile.jpg" />
+        <meta property="og:image" content="/profile.jpg" />
         <meta property="og:site_name" content="Neel Sapariya" />
+        <meta property="og:locale" content="en_US" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@sapariyaneel_" />
         <meta name="twitter:creator" content="@sapariyaneel_" />
-        <meta name="twitter:title" content="Neel Sapariya - Full Stack Developer" />
-        <meta name="twitter:description" content="Neel Sapariya - Full Stack Developer specializing in React, Next.js, and Node.js. View my portfolio showcasing innovative web solutions, projects, and technical expertise." />
-        <meta name="twitter:image" content="https://neelsapariya.vercel.app/profile.jpg" />
+        <meta name="twitter:title" content="Neel Sapariya | Personal Portfolio - Full Stack Developer" />
+        <meta name="twitter:description" content="Neel Sapariya - Personal portfolio website. Experienced Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. View my projects and professional experience." />
+        <meta name="twitter:image" content="/profile.jpg" />
         
         {/* Keywords */}
-        <meta name="keywords" content="Neel Sapariya, Full Stack Developer, Web Developer, React Developer, Next.js Developer, Node.js Developer, JavaScript Developer, Portfolio, Web Development, Software Engineer" />
+        <meta name="keywords" content="Neel Sapariya, Neel, Sapariya, Portfolio, Personal Website, Resume, CV, Full Stack Developer, Web Developer, React Developer, Next.js Developer, Node.js Developer, JavaScript Developer, Web Development, Software Engineer, Frontend Developer, Backend Developer, MERN Stack, JavaScript Expert, UI/UX Developer, Responsive Web Design" />
         
         {/* Additional Meta Tags */}
         <meta name="author" content="Neel Sapariya" />
-        <meta name="theme-color" content="#050816" />
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="google" content="notranslate" />
+        <meta name="theme-color" content="#0f172a" />
+        <meta name="application-name" content="Neel Sapariya Portfolio" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Neel Sapariya" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-TileColor" content="#0f172a" />
+        <meta name="msapplication-tap-highlight" content="no" />
         
         {/* Security Headers */}
         <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self' data:;" />
