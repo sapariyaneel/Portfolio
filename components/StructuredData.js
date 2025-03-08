@@ -1,4 +1,7 @@
 const StructuredData = ({ sectionDescriptions }) => {
+  const baseUrl = "https://neelsapariya.vercel.app";
+  const profileImageUrl = `${baseUrl}/profile.jpg`;
+
   // Person schema
   const personSchema = {
     "@context": "https://schema.org",
@@ -8,19 +11,25 @@ const StructuredData = ({ sectionDescriptions }) => {
     "familyName": "Sapariya",
     "alternateName": "Neel Sapariya Portfolio",
     "jobTitle": "Full Stack Developer",
-    "url": "https://neelsapariya.vercel.app",
+    "url": baseUrl,
     "sameAs": [
       "https://github.com/sapariyaneel",
       "https://twitter.com/sapariyaneel_",
       "https://linkedin.com/in/neelsapariya"
     ],
     "description": "Neel Sapariya is a Full Stack Developer specializing in React, Next.js, and Node.js development.",
-    "image": "/profile.jpg",
+    "image": {
+      "@type": "ImageObject",
+      "url": profileImageUrl,
+      "width": "800",
+      "height": "800",
+      "caption": "Neel Sapariya - Full Stack Developer"
+    },
     "mainEntityOfPage": {
       "@type": "WebSite",
-      "@id": "https://neelsapariya.vercel.app",
+      "@id": baseUrl,
       "name": "Neel Sapariya - Portfolio",
-      "url": "https://neelsapariya.vercel.app"
+      "url": baseUrl
     },
     "knowsAbout": [
       "React.js",
@@ -41,18 +50,41 @@ const StructuredData = ({ sectionDescriptions }) => {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "url": "https://neelsapariya.vercel.app",
+    "url": baseUrl,
     "name": "Neel Sapariya - Personal Portfolio",
     "alternateName": "Neel Sapariya",
     "description": "Personal portfolio website of Neel Sapariya, a Full Stack Developer specializing in modern web technologies.",
     "author": {
       "@type": "Person",
-      "name": "Neel Sapariya"
+      "name": "Neel Sapariya",
+      "image": profileImageUrl
     },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://neelsapariya.vercel.app/#search={search_term_string}",
+      "target": `${baseUrl}/#search={search_term_string}`,
       "query-input": "required name=search_term_string"
+    },
+    "keywords": [
+      "Neel Sapariya",
+      "Neel Sapariya Portfolio",
+      "Full Stack Developer",
+      "React Developer",
+      "Next.js Developer",
+      "Node.js Developer",
+      "Web Developer",
+      "JavaScript Developer",
+      "Frontend Developer",
+      "Backend Developer",
+      "MERN Stack Developer",
+      "Portfolio Website",
+      "Hire Web Developer",
+      "Freelance Developer"
+    ],
+    "image": {
+      "@type": "ImageObject",
+      "url": profileImageUrl,
+      "width": "800",
+      "height": "800"
     }
   };
 
@@ -62,12 +94,18 @@ const StructuredData = ({ sectionDescriptions }) => {
     "@type": "ProfessionalService",
     "name": "Neel Sapariya - Web Development Services",
     "legalName": "Neel Sapariya",
-    "image": "/profile.jpg",
-    "url": "https://neelsapariya.vercel.app",
+    "image": {
+      "@type": "ImageObject",
+      "url": profileImageUrl,
+      "width": "800",
+      "height": "800"
+    },
+    "url": baseUrl,
     "description": "Professional web development services by Neel Sapariya, specializing in full stack solutions with React, Next.js, and Node.js.",
     "founder": {
       "@type": "Person",
-      "name": "Neel Sapariya"
+      "name": "Neel Sapariya",
+      "image": profileImageUrl
     },
     "address": {
       "@type": "PostalAddress",
@@ -92,6 +130,24 @@ const StructuredData = ({ sectionDescriptions }) => {
     ]
   };
 
+  // ImageObject schema for profile image
+  const imageObjectSchema = {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    "contentUrl": profileImageUrl,
+    "url": profileImageUrl,
+    "representativeOfPage": true,
+    "caption": "Neel Sapariya - Full Stack Developer",
+    "description": "Profile photo of Neel Sapariya, a Full Stack Developer specializing in React, Next.js, and Node.js",
+    "name": "Neel Sapariya Profile Photo",
+    "width": "800",
+    "height": "800",
+    "creator": {
+      "@type": "Person",
+      "name": "Neel Sapariya"
+    }
+  };
+
   return (
     <>
       <script
@@ -105,6 +161,10 @@ const StructuredData = ({ sectionDescriptions }) => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(imageObjectSchema) }}
       />
     </>
   );

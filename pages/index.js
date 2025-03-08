@@ -57,13 +57,13 @@ export default function Home() {
         {/* Preload Critical Resources */}
         <link 
           rel="preload" 
-          href="/profile.jpg" 
+          href="https://neelsapariya.vercel.app/profile.jpg" 
           as="image"
           type="image/jpeg"
         />
         <link 
           rel="preload" 
-          href="/herobg.png" 
+          href="https://neelsapariya.vercel.app/herobg.png" 
           as="image"
           type="image/png"
         />
@@ -73,7 +73,9 @@ export default function Home() {
         <meta property="og:description" content="Neel Sapariya - Personal portfolio website. Experienced Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. View my projects and professional experience." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://neelsapariya.vercel.app" />
-        <meta property="og:image" content="/profile.jpg" />
+        <meta property="og:image" content="https://neelsapariya.vercel.app/profile.jpg" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="800" />
         <meta property="og:site_name" content="Neel Sapariya" />
         <meta property="og:locale" content="en_US" />
         
@@ -83,15 +85,15 @@ export default function Home() {
         <meta name="twitter:creator" content="@sapariyaneel_" />
         <meta name="twitter:title" content="Neel Sapariya | Personal Portfolio - Full Stack Developer" />
         <meta name="twitter:description" content="Neel Sapariya - Personal portfolio website. Experienced Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. View my projects and professional experience." />
-        <meta name="twitter:image" content="/profile.jpg" />
+        <meta name="twitter:image" content="https://neelsapariya.vercel.app/profile.jpg" />
         
         {/* Keywords */}
-        <meta name="keywords" content="Neel Sapariya, Neel, Sapariya, Portfolio, Personal Website, Resume, CV, Full Stack Developer, Web Developer, React Developer, Next.js Developer, Node.js Developer, JavaScript Developer, Web Development, Software Engineer, Frontend Developer, Backend Developer, MERN Stack, JavaScript Expert, UI/UX Developer, Responsive Web Design" />
+        <meta name="keywords" content="Neel Sapariya, Neel, Sapariya, Portfolio, Neel Sapariya Portfolio, Neel Sapariya Resume, Neel Sapariya CV, Neel Full Stack Developer, Neel Sapariya Web Developer, Personal Website, Resume, CV, Full Stack Developer, Web Developer, React Developer, Next.js Developer, Node.js Developer, JavaScript Developer, Web Development, Software Engineer, Frontend Developer, Backend Developer, MERN Stack, JavaScript Expert, UI/UX Developer, Responsive Web Design, Hire Neel Sapariya, Neel Sapariya Projects, Neel Sapariya Skills, Neel Sapariya Experience, Neel Sapariya Contact, Neel Sapariya GitHub, Neel Sapariya LinkedIn, Neel Sapariya Twitter, Neel Sapariya Achievements, Neel Sapariya Certifications, Neel Sapariya, Neel, Sapariya, Portfolio, Neel Sapariya Portfolio, Neel Sapariya Resume, Neel Sapariya CV, Neel Full Stack Developer, Neel Sapariya Web Developer, Personal Website, Resume, CV, Full Stack Developer, Web Developer, React Developer, Next.js Developer, Node.js Developer, JavaScript Developer, Web Development, Software Engineer, Frontend Developer, Backend Developer, MERN Stack, JavaScript Expert, UI/UX Developer, Responsive Web Design, Hire Neel Sapariya, Neel Sapariya Projects, Neel Sapariya Skills, Neel Sapariya Experience, Neel Sapariya Contact, Neel Sapariya GitHub, Neel Sapariya LinkedIn, Neel Sapariya Twitter, Neel Sapariya Achievements, Neel Sapariya Certifications, Software Developer Portfolio, Frontend Developer Portfolio, Backend Developer Portfolio, MERN Stack Developer Portfolio, Next.js Portfolio, React.js Portfolio, JavaScript Portfolio, Full Stack Developer Resume, Web Developer Resume, Software Engineer Resume, Next.js Expert, React.js Expert, JavaScript Specialist, Neel Sapariya Developer India, Neel Sapariya Web Developer India, Best Full Stack Developer in India, Web Developer in Maharashtra, Software Engineer in Jalna, Hire a Full Stack Developer, Hire a React.js Developer, Hire a JavaScript Developer, Looking for a Web Developer, Hire a Freelance Developer, How to Become a Full Stack Developer, Best React.js Projects for Beginners, Next.js vs React.js: Which One to Choose?, JavaScript Best Practices for Developers, Neel Sapariya Website, Neel Sapariya Developer Portfolio, Neel Sapariya Official Website, Neel Sapariya Work Samples, Neel Sapariya GitHub Projects, Best Full Stack Developer Portfolio" />
         
         {/* Additional Meta Tags */}
         <meta name="author" content="Neel Sapariya" />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large" />
         <meta name="google" content="notranslate" />
         <meta name="theme-color" content="#0f172a" />
         <meta name="application-name" content="Neel Sapariya Portfolio" />
@@ -101,6 +103,8 @@ export default function Home() {
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-TileColor" content="#0f172a" />
         <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="thumbnail" content="https://neelsapariya.vercel.app/profile.jpg" />
+        <link rel="image_src" href="https://neelsapariya.vercel.app/profile.jpg" />
         
         {/* Security Headers */}
         <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self' data:;" />

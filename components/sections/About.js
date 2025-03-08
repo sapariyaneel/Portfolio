@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 
 const About = () => {
-  const profileImageUrl = '/profile.jpg';
+  const profileImageUrl = 'https://neelsapariya.vercel.app/profile.jpg';
 
   return (
     <>
@@ -40,6 +40,7 @@ const About = () => {
               "image": profileImageUrl,
               "url": "https://neelsapariya.vercel.app",
               "jobTitle": "Full Stack Developer",
+              "description": "Neel Sapariya is a Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. View my projects and professional experience.",
               "sameAs": [
                 "https://github.com/sapariyaneel",
                 "https://linkedin.com/in/neelsapariya",
