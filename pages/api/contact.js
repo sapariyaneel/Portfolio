@@ -38,7 +38,7 @@ export default async function handler(req, res) {
     // Verify SMTP connection
     await transporter.verify();
 
-    // 1. Send notification email to admin
+    // Send notification email to admin
     const adminMailOptions = {
       from: `"Portfolio Contact Form" <${process.env.SMTP_FROM_EMAIL}>`,
       to: process.env.SMTP_TO_EMAIL,
@@ -62,43 +62,8 @@ export default async function handler(req, res) {
       `,
     };
 
-    // 2. Send confirmation email to sender
-    const userMailOptions = {
-      from: `"Neel Sapariya" <${process.env.SMTP_FROM_EMAIL}>`,
-      to: email,
-      subject: 'Thank you for your message',
-      text: `
-        Dear ${name},
-
-        Thank you for contacting me. I have received your message and will get back to you as soon as possible.
-
-        For your reference, here's a copy of your message:
-        ${message}
-
-        Best regards,
-        Neel Sapariya
-      `,
-      html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #2563eb;">Thank You for Your Message</h2>
-          <p>Dear ${name},</p>
-          <p>Thank you for contacting me. I have received your message and will get back to you as soon as possible.</p>
-          
-          <p>For your reference, here's a copy of your message:</p>
-          <div style="background-color: #f3f4f6; padding: 15px; border-radius: 5px; margin: 15px 0;">
-            ${message.replace(/\n/g, '<br>')}
-          </div>
-          
-          <p>Best regards,<br>Neel Sapariya</p>
-        </div>
-      `,
-    };
-
-    // Send both emails
-    await Promise.all([
-      transporter.sendMail(adminMailOptions),
-      transporter.sendMail(userMailOptions)
-    ]);
+    // Send the notification email
+    await transporter.sendMail(adminMailOptions);
 
     return res.status(200).json({ message: 'Message sent successfully!' });
   } catch (error) {
