@@ -5,26 +5,32 @@ const achievements = [
     title: "Certifications",
     items: [
       {
-        name: "Certificate in C / C++ Programming",
-        organization: "MKCL KLiC",
-        date: "2023",
+        name: "Full Stack Java Developer",
+        organization: "ExcelR - Hyderabad",
+        date: "2025",
+        link: "https://drive.google.com/file/d/1gogr3YaS2tpE1LivzLtE_5sJnI-D4M7Y/view?usp=sharing"
         // description: "Awarded for proactive approach and dedication in the workplace"
       },
       {
-        name: "Certificate in Web Designing",
+        name: "MKCL KLiC Certificate in C Programming",
         organization: "MKCL KLiC",
         date: "2023",
+        link: "https://drive.google.com/file/d/1xm_5yGXTAoj-iRhG9W6hAAxtKpxj5ccH/view?usp=sharing"
+        // description: "Awarded for proactive approach and dedication in the workplace"
       },
       {
-        name: "Internship Completion Certificate",
-        organization: "Octanet Services Pvt. Ltd.",
-        date: "2024",
+        name: "MKCL KLiC Certificate in C++ Programming",
+        organization: "MKCL KLiC",
+        date: "2023",
+        link: "https://drive.google.com/file/d/1V2BHSo480BW1C-k8IcOCfaJdpqkjoONA/view?usp=sharing"
+        // description: "Awarded for proactive approach and dedication in the workplace"
       },
       {
-        name: "Internship Completion Certificate",
-        organization: "PRYM Aerospace Pvt. Ltd.",
-        date: "2025",
-      }
+        name: "MKCL KLiC Certificate in Web Designing",
+        organization: "MKCL KLiC",
+        date: "2023",
+        link: "https://drive.google.com/file/d/1xqlq_jenFwUDaT-GjSd7aozvny20idX0/view?usp=sharing"
+      },
       // Add more certifications here
     ]
   },
@@ -41,6 +47,24 @@ const achievements = [
     ]
   }
 ];
+
+// SVG icon component for external link
+const ExternalLinkIcon = () => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    className="h-4 w-4 inline-block ml-1 text-blue-500" 
+    fill="none" 
+    viewBox="0 0 24 24" 
+    stroke="currentColor"
+    strokeWidth={2}
+  >
+    <path 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
+    />
+  </svg>
+);
 
 const Achievements = () => {
   return (
@@ -93,7 +117,19 @@ const Achievements = () => {
                     className="border-l-4 border-blue-600 dark:border-blue-400 pl-4"
                   >
                     <h4 className="text-lg font-semibold text-gray-800 dark:text-white">
-                      {item.name}
+                      {item.link ? (
+                        <a 
+                          href={item.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                        >
+                          {item.name}
+                          <ExternalLinkIcon />
+                        </a>
+                      ) : (
+                        item.name
+                      )}
                     </h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
                       {item.organization} • {item.date}

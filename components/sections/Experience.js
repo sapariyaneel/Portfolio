@@ -21,26 +21,6 @@ const experiences = [
       "Gained hands-on experience in embedded systems and software development for aerospace applications.",
     ],
   },
-  {
-    title: "Software Intern",
-    company: "Octanet Services Pvt. Ltd.",
-    period: "October 2024 - December 2024",
-    description: [
-      "Completed assigned software development tasks efficiently and on time.",
-      "Gained hands-on experience in coding, debugging, and problem-solving.",
-      "Adapted to new technologies and followed best practices in software development.",
-    ],
-  },
-  {
-    title: "Data Entry",
-    company: "Medical Clinic",
-    period: "July 2022 - July 2023",
-    description: [
-      "Entered and managed medical store inventory data accurately in specialized software.",
-      "Maintained records of medicines, stock levels, and sales transactions.",
-      "Ensured data integrity and assisted in streamlining billing and invoicing processes.",
-    ],
-  },
 ];
 
 const Experience = () => {
