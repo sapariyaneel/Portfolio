@@ -2,13 +2,13 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    title: "Junior Software Developer",
+    title: "Junior Full Stack Developer",
     company: "PRYM Aerospace Pvt. Ltd.",
     period: "January 2025 - Present",
     description: [
-      "Developing software solutions to enhance hardware control and automation.",
-      "Designing user-friendly applications to simplify complex aerospace operations.",
-      "Collaborating with teams to optimize software performance and integration.",
+      "Leading the development of scalable full stack applications to support aerospace systems.",
+      "Designing & implementing robust front-end & back-end for real-time hardware integration.",
+      "Collaborating cross-functionally to enhance system performance, security, and maintainability across the software lifecycle.",
     ],
   },
   {

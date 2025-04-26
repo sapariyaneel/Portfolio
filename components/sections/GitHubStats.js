@@ -27,7 +27,7 @@ const GitHubStats = () => {
     { name: 'HTML5', type: 'language', className: 'bg-orange-500 text-white' },
     { name: 'JAVA', type: 'language', className: 'bg-yellow-600 text-white' },
     { name: 'JAVASCRIPT', type: 'language', className: 'bg-yellow-400 text-white' },
-    { name: 'MARKDOWN', type: 'language', className: 'bg-gray-700 text-white' },
+    // { name: 'MARKDOWN', type: 'language', className: 'bg-gray-700 text-white' },
     { name: 'PYTHON', type: 'language', className: 'bg-blue-500 text-white' },
     
     // Cloud & Deployment
@@ -80,11 +80,11 @@ const GitHubStats = () => {
     { name: 'CMAKE', type: 'build', className: 'bg-blue-500 text-white' },
     { name: 'ESLINT', type: 'linter', className: 'bg-purple-600 text-white' },
     { name: 'GRADLE', type: 'build', className: 'bg-green-600 text-white' },
-    { name: 'FFMPEG', type: 'multimedia', className: 'bg-green-500 text-white' },
+    // { name: 'FFMPEG', type: 'multimedia', className: 'bg-green-500 text-white' },
     { name: 'PRETTIER', type: 'formatter', className: 'bg-yellow-600 text-white' },
     
     // Other
-    { name: 'PORTFOLIO', type: 'project', className: 'bg-orange-500 text-white' },
+    // { name: 'PORTFOLIO', type: 'project', className: 'bg-orange-500 text-white' },
     { name: 'RASPBERRY PI', type: 'hardware', className: 'bg-red-500 text-white' },
     { name: 'TAMPERMONKEY', type: 'tool', className: 'bg-gray-700 text-white' }
   ];
