@@ -60,7 +60,7 @@ Welcome to my personal portfolio website! This is a modern, responsive web appli
 
 ## 📝 License
 
-This is a personal portfolio website. All rights reserved. © 2024 Neel Sapariya. This project is not open source and is not available for reuse, modification, or distribution.
+This is a personal portfolio website. All rights reserved. © 2025 Neel Sapariya. This project is not open source and is not available for reuse, modification, or distribution.
 
 ## 🤝 Contact
 

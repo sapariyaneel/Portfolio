@@ -6,6 +6,26 @@ import ProjectModal from '../ProjectModal';
 
 const projects = [
   {
+    title: "EduLearn - LMS System",
+    description: "EduLearn is a comprehensive Learning Management System (LMS) that provides a seamless platform for educators and students to manage and engage in online learning.",
+    image: "/projects/edulearn.png",
+      tags: ["React+Vite", "Java", "SpringBoot", "MySQL"],
+    category: "Full Stack",
+    liveUrl: "https://edulearn-lms.netlify.app",
+    githubUrl: "https://github.com/sapariyaneel/EduLearn-LMS-System",
+    features: [
+      "Modern UI with smooth animations",
+      "Full Stack: React, Spring Boot, MySQL",
+      "Secure user authentication and role-based access",
+      "Course catalog with category filtering",
+      "Student enrollment and progress tracking",
+      "Assignment submission and grading system",
+      "Interactive learning with quizzes and resources",
+      "Admin dashboard for course and user management",
+      "Responsive design optimized for all devices",
+    ],        
+  },
+  {
     title: "Sigma Clothing",
     description: "Sigma Clothing is a modern MERN stack e-commerce platform with seamless shopping, secure payments, and a sleek user experience.",
     image: "/projects/ecommerce.jpg",
